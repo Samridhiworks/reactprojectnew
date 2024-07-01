@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Dashboard from './Dashboard';
-import myimage from './house.jpg';
+import myimage from './house.webp';
 
 const Login = () => {
     const [username, setUsername] = useState('');
