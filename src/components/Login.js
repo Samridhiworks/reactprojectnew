@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Dashboard from './Dashboard';
 import myimage from './house.webp';
+import Navbar from './Navbar';
 
 const Login = () => {
     const [username, setUsername] = useState('');
@@ -53,8 +54,9 @@ const Login = () => {
         <div className='container'>
             {isLogin ? (
                 <div>
+                     <Navbar/>
                     <Dashboard />
-                    <button onClick={logout}>Logout</button>
+                    <button onClick={logout} className='btn-new'>Logout</button>
                 </div>
             ) : (
                 <div className='img-content'>
@@ -78,8 +80,8 @@ const Login = () => {
                                 onChange={handlePassword}
                                 required
                             />
-                            <span onClick={showHide}>
                                 <i className={hide ? 'fa-solid fa-eye-slash' : 'fa-solid fa-eye'}></i>
+                            <span onClick={showHide}>
                             </span>
                             <span className='error'>{passwordError}</span>
 

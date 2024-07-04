@@ -27,6 +27,14 @@ body{
   color: white;
 }
 
+.btn-new{
+  width: 100px;
+  height: 30px;
+  background: #c18308;
+  color: #fff;
+  border: 2px solid #fff;
+  margin-bottom: 50px;
+}
 .App-link {
   color: #61dafb;
 }
@@ -194,9 +202,15 @@ header{
   list-style: none;
 }
 
+.logo h1{
+  color: #c18308;
+}
+
 .all-list ul li a{
   text-decoration: none;
   padding: 10px 30px;
+  color: #a15600;
+  font-weight: 700;
 }
 @media (max-width:768px) {
   .container {

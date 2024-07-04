@@ -14,7 +14,7 @@ const Dashboard = ()=>{
     
     return(
         <>
-        <Navbar/>
+       
        <div className='container-new'>
         {detail.map((item)=>(
             <div  key={item.id}className='all-content' >
